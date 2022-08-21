@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .image {
+        width: 100px;
+        height: 100px;
+      }
+      .interest {
+        width: 70px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="mt-20">
+      <div class="text-center">
+        <h1 class="text-teal-400 text-5xl inline font-semibold">
+          Money Master
+        </h1>
+        <img src="icon.png " class="image inline" alt="" />
+      </div>
+    </section>
+    <main class="mx-auto w-9/12 flex justify-between">
+      <div>
+        <img src="/money-bg.png" alt="" />
+      </div>
+      <div class="w-5/12 bg-gray-100 text-center">
+        <h1 class="py-7 text-4xl">Income & Cost</h1>
+        <p>Income : <input type="text" name="" id="income" /></p>
+        <h3 class="text-4xl my-5">Expenses</h3>
+        <p>Food : <input type="text" name="" class="mb-3" id="food" /></p>
+        <p>Rent : <input type="text" name="" class="mb-3" id="rent" /></p>
+        <p>Clothes : <input type="text" name="" class="mb-3" id="clothes" /></p>
+        <button
+          class="bg-sky-500 py-2 px-6 rounded-md text-white"
+          id="calculate-Btn"
+        >
+          Calculate
+        </button>
+        <h1 class="py-5 text-2xl">
+          Total Expenses: $<span id="total-expenses">0</span>
+        </h1>
+        <h2 class="text-2xl pb-5">
+          Balance: $<span id="total-Balnce">0</span>
+        </h2>
+        <p class="text-2xl">
+          save:
+          <input id="save" class="interest p-2" value="20" type="text" /> %
+          <button
+            class="bg-sky-500 py-2 px-6 rounded-md text-white"
+            id="saveBtn"
+          >
+            save
+          </button>
+        </p>
+
+        <h3 class="pt-5 text-2xl">
+          Saving Amount: $<span id="saving-amount">0</span>
+        </h3>
+        <h3 class="text-2xl">
+          Remaining Balance: $<span id="remaining-Balance">0</span>
+        </h3>
+      </div>
+    </main>
+    <script src="master.js"></script>
+  </body>
+</html>
